@@ -2,16 +2,14 @@ const express = require("express");
 // instantiates Express
 const app = express();
 // for serving files in the public folder, such as CSS files
-app.use(express.static("./public"));
+app.use(express.static("./Website"));
 // server responds when the client sends a GET request for the / endpoint
 
 app.get("/", function(req,res) {
     res.sendFile(__dirname + "/index.html");
-    res.sendFile(__dirname + "/style.css");
 });
 app.post("/", function(req,res) {
      res.sendFile(__dirname + "/index2.html");
-     res.sendFile(__dirname + "/style2.css");
 });
 
 
