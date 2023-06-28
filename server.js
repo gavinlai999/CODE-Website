@@ -7,9 +7,10 @@ app.use(express.static("./public"));
 
 app.get("/", function(req,res) {
     res.sendFile(__dirname + "/index.html");
+    res.sendFile(__dirname + "/style.css");
 });
 app.post("/", function(req,res) {
-     res.sendFile(__dirname + "/index2.html");
+     res.sendFile(__dirname + "/style2.css");
 });
 
 
