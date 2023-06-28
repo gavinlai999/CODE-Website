@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<!--footer display settings-->
+<meta charset="UTF-8">
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+</head>
+<body>
+<!--animated title-->
+<div class='title'>
+    <img src='house.gif' alt="animated house">
+    <span style='--i:1'>H</span>
+    <span style='--i:2'>o</span>
+    <span style='--i:3'>m</span>
+    <span style='--i:4'>e</span>
+</div>
+<!--table of Gavin's favorites-->
+<div class="container">
+    <section class="favorites">
+        <h2>Gavin's Favorite</h2>
+        <table>
+        <tr id='toprowoffavtable'class='tabletoprow' onmouseover = "changeBackground1()" 
+        onmouseout = "backToNormal1()">
+        <th>Game</th>
+        <th>Food</th>
+        <th>School Subject</th>
+        <th>Artist</th>
+        </tr>
+        <tr id = 'rowwithdetails1'onmouseover = "changeBackground2()" 
+        onmouseout = "backToNormal2()">
+        <td>Valorant</td>
+        <td>Fried Chicken</td>
+        <td>Computer Science</td>
+        <td>Taylor Swift</td>
+        </tr>
+        <tr id = 'rowwithdetails2'onmouseover = "changeBackground3()" 
+        onmouseout = "backToNormal3()">
+        <td>Fortnite</td>
+        <td>Pizza</td>
+        <td>Math</td>
+        <td>Lizzo</td>
+        </tr>
+        </table>
+    </section>
+    <section class="childhood">
+        <h3 id = 'titlefirst1'>Gavin's Childhood</h3>
+        <p id = 'firstparagraph1'>Gavin Lai was born in America, on January 7, 2007. His parents came to America in hopes of providing him a better life and education. Gavin enjoyed playing many games when he was younger such as Clash of Clans and Minecraft, however, as he got older, he started to play shootings games such as Fortnite and Valorant which he enjoyed even more. Gavin's childhood consisted of studying and gaming whenever he could. As time went on, his parents finally decided to move to Hacienda Heights which was where Gavin went to school for the rest of his childhood. </p>
+        <h3 header = 'titlefirst2'>Gavin's Desire for Toys</h3>
+        <p id = 'firstparagraph2'>Ever since Gavin discovered that Miniso, he could not stop wanting to add to his collection of Sonny Angels. He also found a new desire for Smiski which can glow in the dark. Gavin now has a bad habit of spending all his money on collecting every single piece of the Sonny Angel and Smiski collection that Miniso sells</p>
+    </section>
+    <section class="goals">
+        <h3 id = 'titlefirst3'>Gavin's Current Goal in Life</h3>
+        <ul>
+        <li>Get straight A's</li>
+        <li>Become UI/UX Designer for Frequently Visited Websites</li>
+        <li>Accepted into UCLA</li>
+        <li>Drive a Bugatti </li>
+        <li>Be Rich</li>
+        <li>Make his parents proud</li>
+        <li>Live in a Big House</li>
+        <li>Be able to Inspire Others to be a Web Designer</li>
+        </ul>
+    </section>
+    <!--when submit button is clicked, user will be alerted a thank you message-->
+    <form>
+        <p>Do you like Gavin's story?</p>
+        <input type="text" id="inputField">
+        <button id='buttonSubmit'class="submit" onclick="submitButton()">Submit</button>
+    </form>
+    <!--When nextButton is clicked, user will be loaded into second page-->
+    <input id='nextButton'type='button' class='buttons' 
+    onclick="location.href='file:///Users/gavinlai/Documents/Projects/CODE-Website/index2.html'"
+    value = 'Next'>
+    <br>
+    <br>
+    <div class='footer-container'>
+        <div class='footer'>
+            <div class='footer-heading footer-1'>
+                <h2> Contacts </h2>
+                <a href="#">Phone: 626-525-9722</a>
+                <a href="#">Email: gavinlai07@gmail.com</a>
+                <a href="#">Snapchat: gavinlai999</a>
+            </div>
+            <div class='footer-heading footer-2'>
+                <h2>Social Media</h2>
+                <a href='https://www.instagram.com/gavinlai999/'>Instagram</a>
+                <a href="https://www.facebook.com/gavin.lai.7399">Facebook</a>
+                <a href="https://www.tiktok.com/@gavinlai999">TikTok</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="responsive.js"></script>
+</body>
+</html>

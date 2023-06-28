@@ -1,0 +1,133 @@
+.title{
+    font-family: 'Point Panther', sans-serif;
+    color: #444;
+    padding: 8px;
+    text-align:left;
+    position:sticky;
+    top:0px;
+    background-color:lightgray;
+}
+.title span {
+    position: relative;
+    display: inline-block;
+    font-size: 50px;
+    color:#444;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i));
+  }
+  @keyframes flip {
+    0%,70% {
+      transform: rotateY(360deg) 
+    }
+  }
+  .animatedpicture{
+    padding-top:16px;
+    padding-bottom:7px;
+    background-color:lightgray;
+    height:55px;
+    width:50px;
+  }
+* {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #343434;
+}
+.textforpage2{
+    color:#343434;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+.picture1, .picture2, .picture3, .picture4 {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+/* Picture gets bigger when hover*/
+.picture1:hover, .picture2:hover, .picture3:hover, .picture4:hover{
+    height: 500px;
+    width: 500px;
+    transition: all 0.8s ease-in-out;
+}
+
+h3 {
+    padding: 1rem;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.6;
+    padding: 1rem;
+}
+
+.backbutton {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+#buttonBack:hover {
+    background-color: #555;
+}
+/* footer for screen with hyperlinks */
+.footer-container{
+    background-color:#343434;
+    padding-bottom: 64px;
+    padding-top: 32px;
+}
+.footer{
+    width:1000px;
+    height: 40vh;
+    background-color:#343434;
+    color:white;
+    display:flex;
+    margin: 0 auto;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.footer-heading{
+    display:flex;
+    flex-direction: column;
+    margin-right: 4rem;
+}
+
+.footer-heading h2{
+    margin-bottom: 2rem;
+}
+
+.footer-heading a{
+    color:#e1d9d1;
+    text-decoration:none;
+    margin-bottom:0.5rem;
+}
+/* footer-text chnages color when hovered */
+.footer-heading a:hover{
+    color:gray;
+    transition: 0.3s ease-out;
+}
+.footer-head h2:hover{
+    color:darkgray;
+    transition: 0.3 ease-out;
+}
