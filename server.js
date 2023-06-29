@@ -5,9 +5,6 @@ const app = express();
 app.use(express.static("./Website"));
 // server responds when the client sends a GET request for the / endpoint
 app.get("/", function(req,res) {
-    res.sendFile(__dirname + "/Website/welcome.html");
-});
-app.get("/", function(req,res) {
     res.sendFile(__dirname + "/Website/index.html");
 });
 app.post("/", function(req,res) {
