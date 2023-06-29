@@ -7,6 +7,14 @@
     top:0px;
     background-color:lightgray;
 }
+/* only use for logo on headings not pictures/images */
+.animatedlogo2{
+    float:right;
+    padding-top:12px;
+    background-color:lightgray;
+    height:50px;
+    width:50px;
+}
 .title span {
     position: relative;
     display: inline-block;
